@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>649</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Axiom IDE</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <widget class="QTreeView" name="treeView">
+       <property name="maximumSize">
+        <size>
+         <width>200</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QSplitter" name="splitter">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>400</height>
+         </size>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Tab 1</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QPlainTextEdit" name="plainTextEdit_2"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Página</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPlainTextEdit" name="plainTextEdit_3"/>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Tab 2</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QPlainTextEdit" name="plainTextEdit_4"/>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QPlainTextEdit" name="plainTextEdit">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>140</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Archivo">
+    <property name="title">
+     <string>&amp;Archivo</string>
+    </property>
+    <addaction name="action_Nuevo_archivo"/>
+    <addaction name="action_Abrir_archivo"/>
+    <addaction name="action_Guardar"/>
+    <addaction name="action_Guardar_como_2"/>
+    <addaction name="separator"/>
+    <addaction name="action_Salir_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_Ejecutar">
+    <property name="title">
+     <string>&amp;Ejecutar</string>
+    </property>
+    <addaction name="action_Compilar"/>
+    <addaction name="action_Ejecutar_programa"/>
+    <addaction name="action_Compilar_y_Ejecutar"/>
+   </widget>
+   <addaction name="menu_Archivo"/>
+   <addaction name="menu_Ejecutar"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Guardar"/>
+   <addaction name="action_Guardar_como_2"/>
+   <addaction name="separator"/>
+   <addaction name="separator"/>
+   <addaction name="action_Compilar"/>
+   <addaction name="action_Ejecutar_programa"/>
+  </widget>
+  <action name="action_Nuevo_archivo">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentNew"/>
+   </property>
+   <property name="text">
+    <string>&amp;Nuevo archivo</string>
+   </property>
+  </action>
+  <action name="action_Abrir_archivo">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentOpen"/>
+   </property>
+   <property name="text">
+    <string>&amp;Abrir archivo</string>
+   </property>
+  </action>
+  <action name="action_Guardar">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentSave"/>
+   </property>
+   <property name="text">
+    <string>&amp;Guardar</string>
+   </property>
+  </action>
+  <action name="action_Salir">
+   <property name="text">
+    <string>&amp;Salir</string>
+   </property>
+  </action>
+  <action name="action_Compilar">
+   <property name="icon">
+    <iconset theme="applications-development"/>
+   </property>
+   <property name="text">
+    <string>&amp;Compilar</string>
+   </property>
+  </action>
+  <action name="action_Ejecutar_programa">
+   <property name="icon">
+    <iconset theme="system-run"/>
+   </property>
+   <property name="text">
+    <string>&amp;Ejecutar programa</string>
+   </property>
+  </action>
+  <action name="action_Compilar_y_Ejecutar">
+   <property name="text">
+    <string>&amp;Compilar y Ejecutar</string>
+   </property>
+  </action>
+  <action name="action_Guardar_como">
+   <property name="text">
+    <string>&amp;Guardar como</string>
+   </property>
+  </action>
+  <action name="action_Guardar_como_2">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentSaveAs"/>
+   </property>
+   <property name="text">
+    <string>&amp;Guardar como</string>
+   </property>
+  </action>
+  <action name="action_Salir_2">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::GoHome"/>
+   </property>
+   <property name="text">
+    <string>&amp;Salir</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
