@@ -1,0 +1,13 @@
+# Build directories
+build/
+bin/
+
+# Temporary run files
+temp_run
+temp_run.cpp
+
+# Qt Creator & IDE files
+*.user
+*.autosave
+.vscode/
+.idea/
