@@ -15,6 +15,7 @@ add_executable(Axiom
     mainwindow.h
     mainwindow.cpp
     mainwindow.ui
+    resources/resources.qrc
 )
 
 target_link_libraries(Axiom PRIVATE Qt6::Widgets)

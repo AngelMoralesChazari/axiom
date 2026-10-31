@@ -3,12 +3,14 @@
 #include <QDir>
 #include <QFile>
 #include <QTextStream>
+#include <QIcon>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setWindowIcon(QIcon(":/axiomv1.svg"));
 
     // Conectar el explorador de archivos local al QTreeView
     fileModel = new QFileSystemModel(this);
