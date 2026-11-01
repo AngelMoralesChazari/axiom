@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
-    a.setWindowIcon(QIcon(":/axiomv1.svg"));
+    a.setWindowIcon(QIcon(":/ChazarIDEV1.svg"));
     w.show();
     return a.exec();
 }

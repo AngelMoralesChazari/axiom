@@ -1,5 +1,7 @@
 <!DOCTYPE RCC><RCC version="1.0">
 <qresource prefix="/">
+    <file>ChazariIDEV1.svg</file>
+    <file>ChazarIDEV1.svg</file>
     <file>axiomv1.svg</file>
 </qresource>
 </RCC>

@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    setWindowIcon(QIcon(":/axiomv1.svg"));
+    setWindowIcon(QIcon(":/ChazarIDEV1.svg"));
 
     // Conectar el explorador de archivos local al QTreeView
     fileModel = new QFileSystemModel(this);
